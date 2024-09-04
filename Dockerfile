@@ -1,15 +1,7 @@
-# Use official Node.js runtime as a parent image
-FROM node:16-alpine
+FROM node:alpine
 
-# Set working directory
-WORKDIR /app
+LABEL maintainer=eric.muellenbach@yncrea.fr
 
-# Copy package.json and install dependencies
-COPY package.json ./
-RUN npm install
+ADD app.js .
 
-# Copy the rest of the application code
-COPY . .
-
-# Start the application
-CMD ["node", "index.js"]
+ENTRYPOINT [ "node", "app.js" ]
