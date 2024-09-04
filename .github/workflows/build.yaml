@@ -32,7 +32,7 @@ jobs:
             password: ${{ secrets.DOCKER_PASSWORD }}
             registry: docker.io
             repository: matheo83/cd
-            tag_with_sha: true
+            # tag_with_sha: true
 
   trivy:
     runs-on: ubuntu-latest
