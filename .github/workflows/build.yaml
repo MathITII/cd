@@ -16,5 +16,5 @@ jobs:
             username: ${{ secrets.DOCKER_USERNAME }}
             password: ${{ secrets.DOCKER_PASSWORD }}
             registry: docker.io
-            repository: docker-desktop/cd
+            repository: matheo83/cd
             tag_with_sha: true
