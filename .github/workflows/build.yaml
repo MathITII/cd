@@ -18,7 +18,7 @@ jobs:
       with:
         args: >
           -Dsonar.projectKey=MathITII_cd
-          -Dsonar.organization=MathITII
+          -Dsonar.organization=mathitii
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
   build:
